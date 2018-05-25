@@ -1,0 +1,22 @@
+.toolbar-header {
+    width: 100%;
+    background-color: green;
+    height: 100px;
+}
+
+.toolbar-items {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.toolbar-items-info {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar-items-info-search {
+    cursor: pointer;
+}
