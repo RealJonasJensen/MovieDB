@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 
+
 class Layout extends Component {
     state = {
         showSearch: false,
@@ -12,6 +13,8 @@ class Layout extends Component {
             return { showSearch: !prevState.showSearch }
         })
     }
+
+
 
     render() {
         return (

@@ -1,0 +1,26 @@
+.movie {
+    width: 900px;
+    margin: 0 auto;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    position: relative;
+    opacity: 1;
+}
+
+.movie::after {
+    opacity: .1;
+}
+
+.movie-info {
+    opacity: 1;
+    height: 60%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 15% ;
+}
+

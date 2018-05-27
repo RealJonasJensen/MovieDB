@@ -1,7 +1,7 @@
 .toolbar-header {
     width: 100%;
-    background-color: green;
-    height: 100px;
+    background-color: rgb(118, 118, 118);
+    height: auto;
 }
 
 .toolbar-items {
@@ -11,12 +11,33 @@
     justify-content: space-between; 
 }
 
-.toolbar-items-info {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
+.toolbar-items h2 {
+    font-family: 'Monoton', cursive;
+    font-size: 4em;
+    padding-top: 3%
 }
 
-.toolbar-items-info-search {
+.toolbar-items a {
+    color: black;
+}
+
+.toolbar-items-info {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.toolbar-items-info p {
+    font-size: 1.2em;
+}
+
+.toolbar-search {
+    transition: all .5s ease-in;
+    margin: 0;
+}
+
+.toolbar-search:hover {
+    color: rgb(196, 196, 196);
     cursor: pointer;
 }

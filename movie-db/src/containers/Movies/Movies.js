@@ -1,32 +1,24 @@
 import React, { Component } from "react";
 
-import { connect } from "react-redux";
-
 import * as actions from "../../store/actions/index";
 
+import { connect } from "react-redux";
+
 import "./Movies.css";
+
+import MovieItem from "../../components/Movies/MovieItem/MovieItem";
+import Loader from "../../components/UI/Loader/Loader";
 
 
 class Movies extends Component {
     componentDidMount() {
-        this.props.onFetchMovies("top");
+        this.props.onFetchMovies("Scar")
     }
 
     render() {
-
-        console.log(this.props.movies)
-        let movies = "Loading...";
-
-        if (this.props.movies) {
-            movies = this.props.movies.map((mov, index) => (
-                <div className="movies-title-item" key={mov.imdbID}>
-                    <img src={mov.Poster} alt={mov.Title} />
-                    <p>
-                        {mov.Title}
-                    </p>
-                </div>
-            ))
-        }
+        const movies = !this.props.movies ? <Loader /> : this.props.movies.map(mov => (
+            <MovieItem key={mov.imdbID} title={mov.Title} poster={mov.Poster} id={mov.imdbID} />
+        ));
 
         return (
             <div className="movies-title">
@@ -36,15 +28,15 @@ class Movies extends Component {
     }
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-        onFetchMovies: (term) => dispatch(actions.fetchMovies(term))
-    }
-}
-
 const mapStateToProps = state => {
     return {
         movies: state.movie.movies
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onFetchMovies: (term) => dispatch(actions.fetchMovies(term))
     }
 }
 

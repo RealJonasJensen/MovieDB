@@ -1,0 +1,52 @@
+.movies-title-item {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.movies-title-item-info {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.inner {
+    position: absolute;
+    width: 154px;
+    height: 198px;
+}
+
+.movies-item-img {
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.showInfo {
+    opacity: .05;
+    transition: opacity .5s ease-out;
+}
+
+.closeInfo {
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+
+.movies-title-item-div {
+    height: 30px;
+    width: 156px;
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item-info-text {
+    padding: 1%;
+    font-size: 1.5em;
+    color: rgb(174, 174, 174);
+    text-align: center;
+    border-bottom: none;
+    margin-top: 30px;
+    opacity: 1;
+}
