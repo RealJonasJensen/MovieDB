@@ -18,6 +18,8 @@ const Toolbar = (props) => (
             </div>
         </div>
         <SearchInput toggleStatus={props.toggleStatus} />
+
+        <div className="toolbar-div"></div>
     </header>
 )
 

@@ -25,7 +25,7 @@ class MovieItem extends Component {
         const cssClass = ["movies-item-img", "inner", this.state.showInfo ? "showInfo" : "closeInfo"]
 
         let movie = (
-            <div className="movies-title-item" onMouseEnter={this.onMouseOnHandler} onMouseOut={this.onMouseOffHandler} >
+            <div style={{ fontSize: this.props.fontStyleSize }} className="movies-title-item" onMouseEnter={this.onMouseOnHandler} onMouseOut={this.onMouseOffHandler} >
                 <p className="item-info-text inner">
                     {this.props.title}
                 </p>

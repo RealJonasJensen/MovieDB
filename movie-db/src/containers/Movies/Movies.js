@@ -12,13 +12,17 @@ import Loader from "../../components/UI/Loader/Loader";
 
 class Movies extends Component {
     componentDidMount() {
-        this.props.onFetchMovies("Scar")
+        this.props.onFetchMovies("Avengers")
     }
 
     render() {
-        const movies = !this.props.movies ? <Loader /> : this.props.movies.map(mov => (
-            <MovieItem key={mov.imdbID} title={mov.Title} poster={mov.Poster} id={mov.imdbID} />
-        ));
+        const movies = !this.props.movies ? <Loader /> : this.props.movies.map(mov => {
+
+            const fontStyleSize = mov.Title.length >= 40 ? ".6em" : "1em";
+
+            return <MovieItem fontStyleSize={fontStyleSize} key={mov.imdbID} title={mov.Title} poster={mov.Poster} id={mov.imdbID} />
+        }
+        );
 
         return (
             <div className="movies-title">
