@@ -15,7 +15,6 @@
     font-family: 'Monoton', cursive;
     font-size: 4em;
     padding-top: 3%;
-    -border: 1px solid black;
 }
 
 .toolbar-items a {
@@ -47,4 +46,45 @@
     background-color: rgb(122, 40, 14);
     height: 20px;
     width: 100%;
+}
+
+@media (max-width: 800px) {
+    .toolbar-items {
+        width:auto;
+    }
+
+    .toolbar-items h2 {
+        padding-left: 10px;
+        font-size: 3em;
+        }
+
+
+    .toolbar-search, .toolbar-lines {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .toolbar-items-info {
+        width: 100%;
+    }
+
+    .toolbar-items-info p {
+        font-size: .7em;
+    }
+
+    .toolbar-items {
+        display: block;
+    }
+
+
+    .toolbar-items h2 {
+        width: 90%;
+        padding: 0 1%;
+    }
+
+    .toolbar-text {
+        padding-left: 10px;
+    }
 }

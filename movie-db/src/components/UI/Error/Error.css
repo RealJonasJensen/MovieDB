@@ -1,0 +1,15 @@
+.error {
+    width: 50%;
+    height: 100px;
+    margin: 1em auto;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(118, 118, 118);
+    -webkit-box-shadow: 7px 9px 45px -6px rgba(0,0,0,0.57);
+    -moz-box-shadow: 7px 9px 45px -6px rgba(0,0,0,0.57);
+    box-shadow: 7px 9px 45px -6px rgba(0,0,0,0.57);
+}
+
+.error p {
+    padding-top: 1em;
+}

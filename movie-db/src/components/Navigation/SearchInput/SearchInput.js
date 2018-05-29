@@ -17,9 +17,8 @@ class SearchInput extends Component {
 
     onChangeHandler = async (event) => {
         if (this.props.location.pathname !== "/") { this.props.history.push("/") };
-        await this.setState({ searchTerm: event.target.value })
-        await console.log(this.props.location)
-        await this.props.onFetchMovies(this.state.searchTerm === "" ? "king" : this.state.searchTerm)
+        await this.setState({ searchTerm: event.target.value });
+        await this.props.onFetchMovies(this.state.searchTerm === "" ? "king" : this.state.searchTerm);
     }
 
     render() {

@@ -13,8 +13,8 @@ const Toolbar = (props) => (
             <NavLink to="/"><h2>MovieDB</h2></NavLink>
             <div className="toolbar-items-info">
                 <p className="toolbar-search" onClick={props.clicked}>Search</p>
-                <p>||</p>
-                <p>Made by Jonas Jensen</p>
+                <p className="toolbar-lines" >||</p>
+                <p className="toolbar-text">Made by Jonas Jensen</p>
             </div>
         </div>
         <SearchInput toggleStatus={props.toggleStatus} />

@@ -7,3 +7,25 @@
     grid-gap: 30px;
     margin-top: 50px;
 }
+
+@media (max-width: 800px) {
+    .movies-title {
+        padding: 0 10px ;
+        width: 100%;
+        grid-gap: 5%;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+
+@media (max-width: 450px) {
+    .movies-title {
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 500px);
+        background-repeat: no-repeat;
+    }
+
+    
+}

@@ -50,3 +50,35 @@ a {
     margin-top: 30px;
     opacity: 1;
 }
+
+@media (max-width: 800px) {
+    .inner {
+        position: absolute;
+    }
+
+    .movies-title-item {
+        width: 50px;
+    }
+
+    a {
+        width: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .movies-item-img {
+        width: 95%;
+        height: 450px;
+        background-repeat: no-repeat;
+    }
+
+    .movies-title-item {
+        align-content: center;
+    }
+
+    .inner {
+        width: 90%;
+    }
+
+}
+

@@ -5,7 +5,7 @@ export const fetchMovies = (term) => dispatch => {
     dispatch(fetchMoviesStart())
     axios.get(`http://www.omdbapi.com/?s=${term}&plot=full&apikey=thewdb`)
         .then(response => dispatch(fetchMoviesSuccess(response.data.Search)))
-        .catch(err => dispatch(fetchMoviesFailure(err)))
+        .catch(err => dispatch(fetchMoviesFailure(err.response.data.Error)))
 }
 
 export const fetchMoviesStart = () => {

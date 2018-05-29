@@ -6,7 +6,8 @@ const Input = (props) => {
 
     return (
         <Aux>
-            <input onChange={props.change} value={props.value} type={props.type} name={props.name} className={props.class} placeholder={props.placeholder} />
+            <input onChange={props.change} value={props.value} type={props.type}
+                name={props.name} className={props.class} placeholder={props.placeholder} />
         </Aux>
 
     )

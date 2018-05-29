@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
+import Footer from "../../components/Navigation/Footer/Footer";
 
 
 class Layout extends Component {
@@ -21,6 +22,7 @@ class Layout extends Component {
             <main>
                 <Toolbar clicked={this.showSearchToggle} toggleStatus={this.state.showSearch} />
                 {this.props.children}
+                <Footer />
             </main>
         )
     }

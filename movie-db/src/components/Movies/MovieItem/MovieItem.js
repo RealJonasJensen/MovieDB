@@ -29,7 +29,10 @@ class MovieItem extends Component {
                 <p className="item-info-text inner">
                     {this.props.title}
                 </p>
-                <div className={cssClass.join(" ")} style={{ backgroundImage: `url(${this.props.poster})` }} />
+                <div className={cssClass.join(" ")} style={{
+                    backgroundImage: `url(${this.props.poster})`,
+                    border: this.props.poster === "N/A" ? "solid 1px white" : "none"
+                }} />
             </div>
         )
 
